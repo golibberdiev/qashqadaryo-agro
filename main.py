@@ -24,7 +24,11 @@ app = FastAPI(
 # CORS (browserdan localhostdan kelayotgan so‘rovlar uchun)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # istasangiz keyin faqat localhost bilan cheklaysiz
+    allow_origins=[
+        "https://agroqashqadaryo.netlify.app",
+        "http://localhost:8000",
+        "http://127.0.0.1:8000"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
