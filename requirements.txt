@@ -3,5 +3,6 @@ uvicorn[standard]
 sqlalchemy
 pydantic
 python-multipart
-passlib[bcrypt]
 jinja2
+passlib[bcrypt]
+python-jose[cryptography]
